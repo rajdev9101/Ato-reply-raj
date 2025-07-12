@@ -12,10 +12,10 @@ import json
 with open("replies.json", "r", encoding="utf-8") as f:
     REPLY_DB = json.load(f)
 
-API_ID = 12345678  # Replace with your API_ID
-API_HASH = "your_api_hash_here"
+API_ID = 27084955  # Replace with your API_ID
+API_HASH = "91c88b554ab2a34f8b0c72228f06fc0b"
 BOT_TOKEN = "your_bot_token_here"
-FORCE_SUB_CHANNEL = "@YourChannelUsername"  # Replace with your channel username
+FORCE_SUB_CHANNEL = "https://t.me/+H-l9E4CaQ8pmZDBl"  # Replace with your channel username
 
 bot = Client("professor_bot", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
 
