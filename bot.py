@@ -1,4 +1,3 @@
-
 from flask import Flask
 from telegram import Update
 from telegram.ext import ApplicationBuilder, MessageHandler, filters, ContextTypes
@@ -6,8 +5,8 @@ import asyncio
 import re
 import threading
 
-BOT_TOKEN = "7777252416:AAGG07twWDJjfFvldXqxaxrJmAFXa0yQAbA"  # 👈 Replace this with your actual bot token
-LOG_CHANNEL_ID = -1002391366258     # 👈 Replace with your channel ID
+BOT_TOKEN = "PASTE_YOUR_BOT_TOKEN"  # 🔐 Yahan apna bot token paste karo
+LOG_CHANNEL_ID = -1001234567890     # 🔢 Yahan apna log channel ka ID paste karo
 
 response_dict = {}
 flask_app = Flask(__name__)
@@ -39,12 +38,7 @@ async def run_telegram():
     application.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_message))
     await fetch_channel_data(application)
     print("✅ Raj One Bot is now active.")
-    await application.initialize()
-    await application.start()
-    await application.updater.start_polling()
-    await application.updater.wait_for_stop()
-    await application.stop()
-    await application.shutdown()
+    await application.run_polling()
 
 def run_flask():
     flask_app.run(host="0.0.0.0", port=8080)
@@ -52,3 +46,4 @@ def run_flask():
 if __name__ == "__main__":
     threading.Thread(target=run_flask).start()
     asyncio.run(run_telegram())
+            
