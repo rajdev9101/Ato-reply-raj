@@ -5,8 +5,8 @@ import asyncio
 import re
 import threading
 
-BOT_TOKEN = "7777252416:AAGG07twWDJjfFvldXqxaxrJmAFXa0yQAbA"  # 🔐 Yahan apna bot token paste karo
-LOG_CHANNEL_ID = -1002391366258     # 🔢 Yahan apna log channel ka ID paste karo
+BOT_TOKEN = "7777252416:AAGG07twWDJjfFvldXqxaxrJmAFXa0yQAbA"
+LOG_CHANNEL_ID = -1002391366258  # Note: add '-' before channel ID
 
 response_dict = {}
 flask_app = Flask(__name__)
@@ -46,4 +46,4 @@ def run_flask():
 if __name__ == "__main__":
     threading.Thread(target=run_flask).start()
     asyncio.run(run_telegram())
-            
+    
