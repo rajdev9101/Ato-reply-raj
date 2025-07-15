@@ -5,8 +5,8 @@ import asyncio
 import re
 import threading
 
-BOT_TOKEN = "PASTE_YOUR_BOT_TOKEN"  # 🔐 Yahan apna bot token paste karo
-LOG_CHANNEL_ID = -1001234567890     # 🔢 Yahan apna log channel ka ID paste karo
+BOT_TOKEN = "7777252416:AAGG07twWDJjfFvldXqxaxrJmAFXa0yQAbA"  # 🔐 Yahan apna bot token paste karo
+LOG_CHANNEL_ID = -1002391366258     # 🔢 Yahan apna log channel ka ID paste karo
 
 response_dict = {}
 flask_app = Flask(__name__)
