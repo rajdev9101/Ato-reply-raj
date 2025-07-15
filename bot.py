@@ -6,8 +6,8 @@ import asyncio
 import re
 import threading
 
-BOT_TOKEN = "PASTE_YOUR_BOT_TOKEN"  # Replace with your bot token
-LOG_CHANNEL_ID = -1001234567890     # Replace with your channel ID
+BOT_TOKEN = "7777252416:AAGG07twWDJjfFvldXqxaxrJmAFXa0yQAbA"  # Replace with your bot token
+LOG_CHANNEL_ID = -1002391366258     # Replace with your channel ID
 
 response_dict = {}
 
